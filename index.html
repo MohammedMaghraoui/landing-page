@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maison Élégance — Boutique</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <i class="fa-solid fa-truck-fast fa-flip-horizontal" style="color: rgb(16, 170, 11);"></i> Livraison gratuite partout au Maroc
+    <span>•</span>
+    <i class="fa-solid fa-money-bill-1-wave" style="color: rgb(16, 170, 11);"></i> Paiement à la livraison
+</div>
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="header-inner">
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a href="#" class="logo">
+            MAISON<span>ÉLÉGANCE</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Accueil</a>
+            <a href="category.html?cat=femme">Femme</a>
+            <a href="category.html?cat=homme">Homme</a>
+            <a href="category.html?cat=accessoires">Accessoires</a>
+            <a href="index.html#about">À propos</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="searchBtn" class="icon-btn"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+
+            <button id="cartBtn" class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+
+    <button id="closeMenu">✕</button>
+
+    <a href="index.html">Accueil</a>
+    <a href="category.html?cat=femme">Femme</a>
+    <a href="category.html?cat=homme">Homme</a>
+    <a href="category.html?cat=accessoires">Accessoires</a>
+    <a href="index.html#about">À propos</a>
+
+</div>
+
+<!-- SEARCH -->
+<div class="search-box" id="searchBox">
+
+    <input type="text" id="searchInput" placeholder="Rechercher un produit..." autocomplete="off" >
+
+    <div id="searchResults"></div>
+
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="video/fashen.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <p class="hero-small">NOUVELLE COLLECTION</p>
+
+        <h1>Discover Your Style</h1>
+
+        <p>Explore notre nouvelle collection et trouvez votre style.</p>
+
+        <a href="#collections" class="primary-btn">
+            Découvrir la collection
+        </a>
+    </div>
+
+</section>
+
+<!-- COLLECTIONS -->
+<section class="section">
+
+    <div class="section-heading">
+        <p>EXPLOREZ</p>
+        <h2>Nos collections</h2>
+    </div>
+
+    <div class="collections">
+
+            <a href="category.html?cat=femme" class="collection-card femme-card">
+                <div>
+                    <span>COLLECTION</span>
+                    <h3>Femme</h3>
+                    <button>Découvrir →</button>
+                </div>
+            </a>
+
+            <a href="category.html?cat=homme" class="collection-card homme-card">
+                <div>
+                    <span>COLLECTION</span>
+                    <h3>Homme</h3>
+                    <button>Découvrir →</button>
+                </div>
+            </a>
+
+            <a href="category.html?cat=accessoires" class="collection-card access-card">
+                <div>
+                    <span>COLLECTION</span>
+                    <h3>Accessoires</h3>
+                    <button>Découvrir →</button>
+                </div>
+            </a>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="section products-section" id="products">
+
+    <div class="section-heading">
+
+        <p>NOTRE SÉLECTION</p>
+
+        <h2>Nos produits</h2>
+
+    </div>
+
+    <div class="filters">
+
+        <button class="filter active" data-category="all">
+            Tout
+        </button>
+
+        <button class="filter" data-category="femme">
+            Femme
+        </button>
+
+        <button class="filter" data-category="homme">
+            Homme
+        </button>
+
+        <button class="filter" data-category="accessoires">
+            Accessoires
+        </button>
+
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+
+    <div class="benefit">
+        <div><i class="fa-solid fa-truck-fast fa-flip-horizontal" style="color: rgb(16, 170, 11);"></i></div>
+        <h3>Livraison rapide</h3>
+        <p>Partout au Maroc</p>
+    </div>
+
+    <div class="benefit">
+        <div><i class="fa-solid fa-money-bill-1-wave" style="color: rgb(16, 170, 11);"></i></div>
+        <h3>Paiement à la livraison</h3>
+        <p>Simple et sécurisé</p>
+    </div>
+
+    <div class="benefit">
+        <div><i class="fa-solid fa-rotate-left fa-flip-vertical" style="color: rgb(16, 170, 11);"></i></div>
+        <h3>Retour facile</h3>
+        <p>Service client à votre écoute</p>
+    </div>
+
+    <div class="benefit">
+        <div><i class="fa-solid fa-lock" style="color: rgb(16, 170, 11);"></i></div>
+        <h3>Achat sécurisé</h3>
+        <p>Vos données sont protégées</p>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-image"></div>
+
+    <div class="about-content">
+
+        <p>NOTRE HISTOIRE</p>
+
+        <h2>
+            Le style, simplement.
+        </h2>
+
+        <p>
+            Maison Élégance est une boutique marocaine pensée
+            pour celles et ceux qui recherchent des produits
+            modernes, élégants et accessibles.
+        </p>
+
+        <p>
+            Notre objectif est simple : vous proposer une
+            expérience shopping agréable, rapide et fiable.
+        </p>
+
+        <a href="#products" class="secondary-btn">
+            Voir les produits
+        </a>
+
+    </div>
+
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews">
+
+    <div class="section-heading">
+
+        <p>ILS NOUS FONT CONFIANCE</p>
+
+        <h2>Avis clients</h2>
+
+    </div>
+
+    <div class="reviews-grid">
+
+        <div class="review">
+            <div class="stars"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></div>
+            <p>
+                "Très belle qualité et livraison rapide.
+                Je recommande fortement."
+            </p>
+            <strong>— Sarah, Rabat</strong>
+        </div>
+
+        <div class="review">
+            <div class="stars"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></div>
+            <p>
+                "Produit exactement comme sur les photos.
+                Très satisfait."
+            </p>
+            <strong>— Yassine, Casablanca</strong>
+        </div>
+
+        <div class="review">
+            <div class="stars"><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i><i class="fa-solid fa-star fa-xs"></i></div>
+            <p>
+                "Service client excellent et commande reçue
+                rapidement."
+            </p>
+            <strong>— Imane, Marrakech</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+
+    <div class="section-heading">
+        <p>QUESTIONS</p>
+        <h2>Questions fréquentes</h2>
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Comment commander ?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Ajoutez vos produits au panier, remplissez
+                vos informations puis confirmez votre commande.
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Est-ce que le paiement à la livraison est disponible ?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Oui. Vous pouvez payer directement au moment
+                de recevoir votre commande.
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Livrez-vous partout au Maroc ?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Oui, nous livrons dans toutes les villes du Maroc.
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Combien coûte la livraison ?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                La livraison est gratuite selon les offres
+                disponibles sur la boutique.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <p>RESTEZ INFORMÉ</p>
+
+    <h2>
+        Recevez nos nouveautés
+    </h2>
+
+    <form id="newsletterForm">
+
+        <input type="email" placeholder="Votre adresse email" required >
+
+        <button>
+            S'inscrire
+        </button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>MAISONÉLÉGANCE</h3>
+
+            <p>
+                Une boutique marocaine dédiée au style,
+                à la qualité et à l'élégance.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+            <h4>Catégories</h4>
+
+            <a href="category.html?cat=femme">Femme</a>
+            <a href="category.html?cat=homme">Homme</a>
+            <a href="category.html?cat=accessoires">Accessoires</a>
+        </div>
+
+        <div>
+
+            <h4>Informations</h4>
+
+            <a href="#about">À propos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#">Livraison</a>
+            <a href="#">Retours</a>
+
+        </div>
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p><i class="fa-solid fa-location-dot"></i> Maroc</p>
+            <p><i class="fa-solid fa-phone"></i> +212 6 XX XX XX XX</p>
+            <p><i class="fa-solid fa-envelope"></i> contact@maison-elegance.ma</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Maison Élégance — Tous droits réservés.
+    </div>
+
+</footer>
+
+<!-- CART -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <h2>Votre panier</h2>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong>
+                <span id="cartTotal">0</span> DH
+            </strong>
+        </div>
+
+        <button id="checkoutBtn" class="checkout-btn">
+            Commander
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- CHECKOUT -->
+<div class="modal" id="checkoutModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeCheckout">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Finaliser votre commande</h2>
+
+        <p class="modal-subtitle">
+            Paiement à la livraison
+        </p>
+
+        <form id="checkoutForm">
+
+            <label>
+                Nom complet
+                <input type="text" id="customerName" required >
+            </label>
+
+            <label>
+                Téléphone
+                <input type="tel" id="customerPhone" placeholder="06XXXXXXXX" required >
+            </label>
+
+            <label>
+                Ville
+                <input type="text" id="customerCity" required >
+            </label>
+
+            <label>
+                Adresse
+                <textarea id="customerAddress" rows="3" required ></textarea>
+            </label>
+
+            <button class="primary-btn full">
+                Confirmer la commande
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- WHATSAPP -->
+<a href="#" id="whatsapp" class="whatsapp" target="_blank" >
+    WhatsApp
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

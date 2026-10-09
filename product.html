@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Produit — Maison Élégance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin >
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<div class="top-bar">
+    <i class="fa-solid fa-truck-fast fa-flip-horizontal" style="color: rgb(16, 170, 11);"></i> Livraison gratuite partout au Maroc
+    <span>•</span>
+    <i class="fa-solid fa-money-bill-1-wave" style="color: rgb(16, 170, 11);"></i> Paiement à la livraison
+</div>
+
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <button class="menu-btn" id="menuBtn" >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a href="index.html" class="logo" >
+            MAISON<span>ÉLÉGANCE</span>
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="index.html">
+                Accueil
+            </a>
+
+            <a href="category.html?cat=femme">
+                Femme
+            </a>
+
+            <a href="category.html?cat=homme">
+                Homme
+            </a>
+
+            <a href="category.html?cat=accessoires">
+                Accessoires
+            </a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="searchBtn" class="icon-btn" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button id="cartBtn" class="cart-btn" >
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="search-box" id="searchBox" >
+
+    <input type="text" id="searchInput" placeholder="Rechercher un produit..." >
+
+    <div id="searchResults"></div>
+
+</div>
+
+
+<div class="mobile-menu" id="mobileMenu" >
+
+    <button id="closeMenu">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <a href="index.html">
+        Accueil
+    </a>
+
+    <a href="category.html?cat=femme">
+        Femme
+    </a>
+
+    <a href="category.html?cat=homme">
+        Homme
+    </a>
+
+    <a href="category.html?cat=accessoires">
+        Accessoires
+    </a>
+
+</div>
+
+
+<!-- PRODUCT -->
+
+<main>
+
+    <div class="product-page">
+
+        <div class="product-gallery">
+
+            <div class="main-product-image">
+
+                <img id="productImage" src="" alt="" >
+
+            </div>
+
+        </div>
+
+
+        <div class="product-details">
+
+            <p class="product-category" id="productCategory" >
+                COLLECTION
+            </p>
+
+            <h1 id="productName">
+                Produit
+            </h1>
+
+            <div class="product-rating">
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <span>
+                    4.9 / 5
+                </span>
+            </div>
+
+
+            <div class="product-detail-price">
+
+                <strong id="productPrice">
+                    0 DH
+                </strong>
+
+                <del id="productOldPrice">
+                    0 DH
+                </del>
+
+            </div>
+
+
+            <p class="product-long-description" id="productDescription" >
+            </p>
+
+
+            <div class="product-features">
+
+                <div>
+                    <i class="fa-solid fa-check"></i> Livraison partout au Maroc
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i> Paiement à la livraison
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i> Produit contrôlé avant expédition
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i> Service client disponible
+                </div>
+
+            </div>
+
+
+            <div class="quantity-box">
+
+                <button id="minus">
+                    -
+                </button>
+
+                <span id="quantity">
+                    1
+                </span>
+
+                <button id="plus">
+                    +
+                </button>
+
+            </div>
+
+
+            <button class="add-product-btn" id="addProductBtn" >
+                Ajouter au panier
+            </button>
+
+
+            <button class="buy-now-btn" id="buyNowBtn" >
+                Acheter maintenant
+            </button>
+
+
+            <div class="product-info-box">
+
+                <div>
+                    <strong>
+                        Livraison
+                    </strong>
+
+                    <span>
+                        2 à 4 jours ouvrables
+                    </span>
+                </div>
+
+                <div>
+                    <strong>
+                        Paiement
+                    </strong>
+
+                    <span>
+                        Paiement à la livraison
+                    </span>
+                </div>
+
+                <div>
+                    <strong>
+                        Disponibilité
+                    </strong>
+
+                    <span>
+                        En stock
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESCRIPTION -->
+
+    <section class="product-description-section">
+
+        <div class="product-description-inner">
+
+            <h2> Description du produit </h2>
+
+            <p id="productFullDescription"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RELATED PRODUCTS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <p>
+                VOUS AIMEREZ AUSSI
+            </p>
+
+            <h2>
+                Produits similaires
+            </h2>
+
+        </div>
+
+        <div class="products-grid" id="relatedProducts" ></div>
+
+    </section>
+
+</main>
+
+
+<!-- CART -->
+
+<div class="overlay" id="overlay" ></div>
+
+
+<aside class="cart-drawer" id="cartDrawer" >
+
+    <div class="cart-header">
+
+        <h2>
+            Votre panier
+        </h2>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div id="cartItems" class="cart-items" ></div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong>
+                <span id="cartTotal">
+                    0
+                </span>
+                DH
+            </strong>
+
+        </div>
+
+        <button id="checkoutBtn" class="checkout-btn" >
+            Commander
+        </button>
+
+    </div>
+
+</aside>
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>MAISONÉLÉGANCE</h3>
+
+            <p>
+                Une boutique marocaine dédiée au style,
+                à la qualité et à l'élégance.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+            <h4>Catégories</h4>
+
+            <a href="category.html?cat=femme">Femme</a>
+            <a href="category.html?cat=homme">Homme</a>
+            <a href="category.html?cat=accessoires">Accessoires</a>
+        </div>
+
+        <div>
+
+            <h4>Informations</h4>
+
+            <a href="#about">À propos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#">Livraison</a>
+            <a href="#">Retours</a>
+
+        </div>
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p><i class="fa-solid fa-location-dot"></i> Maroc</p>
+            <p><i class="fa-solid fa-phone"></i> +212 6 XX XX XX XX</p>
+            <p><i class="fa-solid fa-envelope"></i> contact@maison-elegance.ma</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Maison Élégance — Tous droits réservés.
+    </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a href="#" id="whatsapp" class="whatsapp" target="_blank" >
+    WhatsApp
+</a>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

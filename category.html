@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Collection — Maison Élégance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="top-bar">
+    <i class="fa-solid fa-truck-fast fa-flip-horizontal" style="color: rgb(16, 170, 11);"></i> Livraison gratuite partout au Maroc
+    <span>•</span>
+    <i class="fa-solid fa-money-bill-1-wave" style="color: rgb(16, 170, 11);"></i> Paiement à la livraison
+</div>
+
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a href="index.html" class="logo">
+            MAISON<span>ÉLÉGANCE</span>
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="index.html">
+                Accueil
+            </a>
+
+            <a href="category.html?cat=femme">
+                Femme
+            </a>
+
+            <a href="category.html?cat=homme">
+                Homme
+            </a>
+
+            <a href="category.html?cat=accessoires">
+                Accessoires
+            </a>
+
+            <a href="index.html#about">
+                À propos
+            </a>
+
+        </nav>
+
+        <div class="header-actions">   
+
+            <button id="searchBtn" class="icon-btn" >  <i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <button id="cartBtn" class="cart-btn" > <i class="fa-solid fa-cart-shopping"></i> <span id="cartCount">0</span></button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="search-box" id="searchBox">
+
+    <input type="text" id="searchInput" placeholder="Rechercher un produit..." >
+
+    <div id="searchResults"></div>
+
+</div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <button id="closeMenu">
+        ✕
+    </button>
+
+    <a href="index.html">
+        Accueil
+    </a>
+
+    <a href="category.html?cat=femme">
+        Femme
+    </a>
+
+    <a href="category.html?cat=homme">
+        Homme
+    </a>
+
+    <a href="category.html?cat=accessoires">
+        Accessoires
+    </a>
+
+    <a href="index.html#about">
+        À propos
+    </a>
+
+</div>
+
+
+<!-- CATEGORY HERO -->
+
+<section class="category-hero">
+
+    <div>
+
+        <p>COLLECTION</p>
+
+        <h1 id="categoryTitle">
+            Femme
+        </h1>
+
+        <p id="categoryDescription">
+            Découvrez notre sélection.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="section">
+
+    <div class="category-top">
+
+        <h2 id="productsCount">
+            Produits
+        </h2>
+
+        <select id="sortProducts">
+
+            <option value="default">
+                Trier par
+            </option>
+
+            <option value="price-low">
+                Prix : croissant
+            </option>
+
+            <option value="price-high">
+                Prix : décroissant
+            </option>
+
+            <option value="name">
+                Nom
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="products-grid" id="productsGrid" > </div>
+
+</section>
+
+
+<!-- CART -->
+
+<div class="overlay" id="overlay" ></div>
+
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <h2>
+            Votre panier
+        </h2>
+
+        <button id="closeCart">
+            ✕
+        </button>
+
+    </div>
+
+    <div id="cartItems" class="cart-items" ></div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong>
+                <span id="cartTotal">
+                    0
+                </span>
+                DH
+            </strong>
+
+        </div>
+
+        <button id="checkoutBtn" class="checkout-btn" >
+            Commander
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <p>RESTEZ INFORMÉ</p>
+
+    <h2>
+        Recevez nos nouveautés
+    </h2>
+
+    <form id="newsletterForm">
+
+        <input type="email" placeholder="Votre adresse email" required >
+
+        <button>
+            S'inscrire
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>MAISONÉLÉGANCE</h3>
+
+            <p>
+                Une boutique marocaine dédiée au style,
+                à la qualité et à l'élégance.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+            <h4>Catégories</h4>
+
+            <a href="category.html?cat=femme">Femme</a>
+            <a href="category.html?cat=homme">Homme</a>
+            <a href="category.html?cat=accessoires">Accessoires</a>
+        </div>
+
+        <div>
+
+            <h4>Informations</h4>
+
+            <a href="#about">À propos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#">Livraison</a>
+            <a href="#">Retours</a>
+
+        </div>
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p><i class="fa-solid fa-location-dot"></i> Maroc</p>
+            <p><i class="fa-solid fa-phone"></i> +212 6 XX XX XX XX</p>
+            <p><i class="fa-solid fa-envelope"></i> contact@maison-elegance.ma</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Maison Élégance — Tous droits réservés.
+    </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a href="#" id="whatsapp" class="whatsapp" target="_blank" >
+    WhatsApp
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
